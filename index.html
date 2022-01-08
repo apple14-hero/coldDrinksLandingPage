@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Cold Drinks Land</title>
+  </head>
+  <body>
+    <header>
+        <a href="#"><img class="logo" src="images/pepsilogo.png" alt="pepsi logo"></a>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">What's new</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="content">
+      <div class="text">
+        <h2>Do you <span>Like</span> It</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia pariatur, nam exercitationem! Expedita accusamus, placeat. Sunt ab adipisci ipsum, ex voluptatum velit numquam ea nostrum, voluptas sequi vero, maxime, libero distinctio.</p>
+        <a href="#">View All Products</a>
+      </div>
+
+      <div class="image">
+        <img class="pepsi" src="images/pepsi.png" alt="pepsi can">
+      </div>
+
+      <ul class="btn">
+        <li><img src="images/pepsi.png" alt="pepsi can" onclick="change('images/pepsi.png', 'images/pepsi'); changeColor('#0062be'); removeClass('thums')"></li>
+        <li><img class="thumbsUpbtn" src="images/thums.png" alt="thumbs Up can" onclick="change('images/thums.png','images/thums'); changeColor('#000000'); addClass('thums')"></li>
+        <li><img src="images/cocaCola.png" alt="coca cola can" onclick="change('images/cocaCola.png', 'images/cocaCola'); changeColor('#e60c2c');  removeClass('thums')"></li>
+      </ul>
+
+    </section>
+
+    <script type="text/javascript">
+      function change(data, logo) {
+        document.querySelector('.pepsi').src = data;
+        document.querySelector('.logo').src = logo + 'logo.png';
+      }
+
+      function addClass(className) {
+        document.querySelector('.image').classList.add(className);
+      }
+
+      function removeClass(className) {
+        document.querySelector('.image').classList.remove(className);
+      }
+
+      function changeColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'popins', sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  background: #0062be;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25rem 6.25rem;
+  transition: 0.5s;
+}
+
+header a img {
+  max-width: 5rem;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  padding: 0.875rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.content {
+  margin-left: 5.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+.content .text {
+  margin-top: 2.875rem;
+  width: 21.25rem;
+  height: 17.5rem;
+}
+
+.content .text h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.content .text h2 span {
+  font-size: 5rem;
+}
+
+.content .text p {
+  font-size: 1.3em;
+  line-height: 1;
+  color: #fff;
+}
+
+.content .text a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  padding: 0.375rem 1rem;
+  border-radius: 2.5rem;
+  letter-spacing: 0.063rem;
+  transition: .5s;
+}
+
+.content .text a:hover {
+  transform: scale(1.1);
+}
+
+.content .image {
+  max-width: 16.25rem;
+  margin-right: 6.25rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .image img {
+  max-height: 29.375rem;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.content .image img:hover {
+  transform: scale(1.1);
+}
+
+.content .btn {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  list-style: none;
+}
+.content .btn .thumbsUpbtn {
+  max-height: 4.875rem;
+}
+
+.content .btn img {
+  max-width: 9.375rem;
+  max-height: 5rem;
+}
+
+.content .btn li {
+  cursor: pointer;
+  padding: 0.125rem 0.625rem;
+  transition: .5s;
+}
+
+.content .btn li:hover {
+  transform: translateY(-0.625rem);
+}
+
+
+/* media queries */
+
+
+/* 62.375em = 998px */
+@media (max-width: 62.375em) {
+  html {
+    font-size: 90%;
+  }
+
+
+}
+
+
+@media (max-width: 48em) {
+  html {
+    font-size: 75%;
+  }
+
+
+  header ul li a {
+    /* 14px */
+    font-size: 1.458rem;
+}
+  header a img {
+  max-width: 5.5rem;
+  /* 10px */
+  padding-right: 1.042rem;
+  /* 8px */
+  margin-right: 0.833rem;
+  margin-left: -2.604rem;
+  /* 25px */
+}
+.content {
+    margin-left: 4.625rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .text {
+    text-align: left;
+    /* 30px */
+    margin-left: -3.125rem;
+    width: 22.25rem;
+    height: 19.5rem;
+  }
+
+  .content .text p {
+    text-align: justify;
+    margin-top: 1rem;
+    font-size: 1.5em;
+  }
+
+  .content .image {
+    margin-top: 75px;
+  }
+
+  .content .image img {
+    max-height: 20.375rem;
+    /* 20px */
+    margin-top: 2.083rem;
+    padding-top: 1.146rem;
+    /* 11px */
+  }
+
+  .content .btn img {
+    max-width: 5.375rem;
+    max-height: 5rem;
+  }
+
+  .content .btn {
+    bottom: -12.25rem;
+
+  }
+
+  .content .thums {
+    /* 39px */
+    margin-left: 4.063rem;
+  }
+
+}
+
+
+/* 316px = 19.75em and 24.938em = 399px */
+@media (min-width: 19.75em) and (max-width: 24.938em) {
+  html {
+    /* 60% = 9.6px */
+    font-size: 60%;
+  }
+  header {
+    margin: 1.25rem 3.10rem;
+  }
+
+  header ul li a {
+    /* 11px */
+    font-size: 1.146rem;
+  }
+
+  .content {
+    margin-left: 4.625rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .text h2 {
+    font-size: 5rem;
+  }
+  .content .text {
+    text-align: justify;
+    /* 30px */
+    margin-left: -3.125rem;
+    width: 22.25rem;
+    height: 19.5rem;
+  }
+
+  .content .text p {
+    margin-top: 1rem;
+    font-size: 1.5em;
+  }
+
+  .content .image {
+    /* 75px */
+    margin-top: 7.813rem;
+  }
+
+  .content .image img {
+    max-height: 18.375rem;
+    /* 17px */
+    margin-top: 1.771rem;
+    padding-top: 0.938rem;
+    /* 9px */
+  }
+
+  .content .btn img {
+    max-width: 5.375rem;
+    max-height: 5rem;
+  }
+
+  .content .btn {
+    padding: 1.125rem 0.625rem;
+    bottom: -0.521rem;
+    /* -5px */
+
+  }
+
+  .content .thums {
+    /* 39px */
+    margin-left: 4.063rem;
+  }
+
+  .content .text a:hover {
+    transform: scale(1.1);
+  }
+}
